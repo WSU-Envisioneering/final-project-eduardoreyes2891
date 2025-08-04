@@ -1,1 +1,70 @@
 /* Your styles go here */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+}
+
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.mainNav{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+footer{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footerNav{
+    display: flex;
+    list-style: none;
+}
+
+@media all and (min-width: 600px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        align-items: center;
+    }
+    
+    nav > a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        padding-left: 2rem;
+    }
+    
+    .mainNav{
+        grid-column: 3 / span 1;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-right: 1rem;
+    
+    }
+}

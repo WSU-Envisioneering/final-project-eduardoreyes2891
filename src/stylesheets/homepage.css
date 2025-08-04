@@ -1,1 +1,44 @@
+header{
+    background-color: navy;
+    color: azure;
+    padding: 1rem 2rem;
+}
 
+header p{
+    padding-bottom: 1.3rem;
+}
+
+.lg-btn{
+    background-color: rgb(215, 245, 250);
+    text-decoration: none;
+    color: rgb(59, 63, 121);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "hdr2 hdr2"
+    "fig1 fig2";
+}
+
+h2{
+    grid-area: hdr2;
+}
+
+figure:nth-child(2){
+    grid-area: fig1;
+}
+
+figure:nth-child(3){
+    grid-area: fig2;
+}
+
+img{
+    width: 100%;
+}
