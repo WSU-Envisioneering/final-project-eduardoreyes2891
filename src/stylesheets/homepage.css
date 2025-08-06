@@ -21,24 +21,31 @@ header p{
 
 main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "hdr2 hdr2"
-    "fig1 fig2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    
 }
 
 h2{
-    grid-area: hdr2;
-}
-
-figure:nth-child(2){
-    grid-area: fig1;
-}
-
-figure:nth-child(3){
-    grid-area: fig2;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.img1{
+    max-width: 100%;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    padding: 1rem;
+    border: 3px azure solid;
+}
+
+.firstparagraph{
+    grid-area: 2 / 2
 }

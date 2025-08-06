@@ -10,6 +10,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     align-items: center;
+    background-color: rgb(203, 216, 236);
 }
 
 nav > a{
@@ -35,13 +36,16 @@ nav > a{
 }
 
 footer{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
 }
 
 .footerNav{
-    display: flex;
+
     list-style: none;
 }
 
