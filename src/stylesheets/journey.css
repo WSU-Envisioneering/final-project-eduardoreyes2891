@@ -1,1 +1,47 @@
+header h1{
+    font-size: xxx-large;
+    padding: 3rem;
+    text-align: center;
 
+    color: rgb(236, 255, 93);
+}
+
+body{
+    background-color: rgb(9, 5, 30);
+}
+
+p{
+    color: yellow;
+}
+
+header{
+    display: flex;
+    background-color: darkslateblue;
+    justify-content: space-around;
+}
+
+header img{
+    max-width: 5%;
+    height: 5%;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+.firstparagraph{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+
+.secondparagraph{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
