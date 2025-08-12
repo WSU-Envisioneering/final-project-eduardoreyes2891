@@ -1,1 +1,55 @@
+header h1{
+    text-align: center;
+    background-color: rgb(58, 43, 72);
+    color: azure;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: rgb(61, 66, 139);
+}
+
+.favlist1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: auto;
+    
+}
+
+.favlist2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: rgb(58, 43, 72);
+    color: azure;
+    
+}
+
+.favlist2 li{
+    list-style: none;
+}
+
+.favlist3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1rem;
+}
+
+main h2{
+    text-align: center;
+    
+}
+
+
+li{
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
 

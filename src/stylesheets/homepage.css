@@ -21,31 +21,54 @@ header p{
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 50% 50%;
     
 }
 
 h2{
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: cornflowerblue;
+    padding: 1rem;
+    
 }
 
 img{
-    max-width: 100%;
+    max-width: 50%;
 }
 
 figcaption{
     text-align: center;
 }
 
-.img1{
-    max-width: 100%;
+.img2{
+
     grid-column-start: 3;
-    grid-row-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     padding: 1rem;
     border: 3px azure solid;
+    text-align: center;
 }
 
 .firstparagraph{
-    grid-area: 2 / 2
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    padding: 1rem;
+}
+
+.firstparagraph ul{
+    margin-left: 1rem;
+}
+
+.img1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+}
+
+.img1 img{
+    max-width: 70%;
+    translate: 0px -100px;
 }
